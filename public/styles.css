@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans+Narrow&display=swap');
 
 .border{
-    border: 1px solid black;
+    border: 1px solid gainsboro;
 }
 /*TODO: DELETE THIS*/
 
@@ -241,6 +241,85 @@ header, main{
     grid-area: 3 / 3 / 4 / 4;
 }
 
+.third-section{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    position: relative;
+}
+.third-section:before{
+    position: absolute;
+    pointer-events: none;
+    content: "";
+    background-image: url("./images/vegetables-background.svg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 20%;
+    z-index: 2000;
+}
+.third-section-content{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 3rem;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.third-s-element {
+    width: 100%;
+}
+
+.third-s-element:nth-child(1),
+.third-s-element:nth-child(2),
+.third-s-element:nth-child(3){
+    grid-column: span 3;
+}
+
+.third-s-element:nth-child(4),
+.third-s-element:nth-child(5),
+.third-s-element:nth-child(6) {
+    grid-column: span 1;
+}
+
+.third-s-element:nth-child(1) h4{
+    color: azure;
+    font-size: 48px;
+    font-weight: 350;
+    text-align: center;
+}
+.third-s-element:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+.third-s-element:nth-child(2) p{
+    text-align: center;
+    width: 65%;
+    color: azure;
+    font-size: 22px;
+    font-weight: 350;
+}
+.third-s-element:nth-child(3) h4{
+    color: azure;
+    font-size: 30px;
+    font-weight: 350;
+    text-align: center;
+}
+.third-s-element:nth-child(4) img{
+    width: 250px;
+    float: right;
+}
+.third-s-element:nth-child(5) p,
+.third-s-element:nth-child(6) p{
+    color: azure;
+    font-size: 22px;
+    font-weight: 350;
+    text-align: left;
+}
+
+
 footer{
     background-color: #000000;
     position: relative;
@@ -348,6 +427,24 @@ footer:before{
     }
     .second-s-element {
         margin-top: 0.6rem;
+    }
+    .second-s-element:nth-child(4){
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+    }
+    .third-section-content{
+        display: grid;
+        width: 80%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-gap: 3rem;
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    .third-s-element:nth-child(1),
+    .third-s-element:nth-child(2),
+    .third-s-element:nth-child(3){
+        grid-column: span 1;
     }
 }
 
