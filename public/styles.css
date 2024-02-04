@@ -562,6 +562,7 @@ footer:before{
     opacity: 20%;
     z-index: 2000;
     pointer-events: none;
+    margin-top: -8rem;
 }
 .footer-content{
     width: 80%;
