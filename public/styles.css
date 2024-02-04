@@ -111,6 +111,7 @@ header, main{
     grid-row-gap: 2rem;
     margin-top: -6rem;
     z-index: 2000;
+    padding-bottom: 50px;
 }
 .second-s-element{
     display: flex;
